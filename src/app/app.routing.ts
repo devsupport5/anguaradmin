@@ -79,6 +79,21 @@ export const routes: Routes = [
         loadChildren: () => import('./views/theme/theme.module').then(m => m.ThemeModule)
       },
       {
+        path: 'category',
+        loadChildren: () => import('./views/manage/category/category.module').then(m => m.CategoryModule)
+      },
+      {
+        path: 'product',
+        loadChildren: () => import('./views/manage/product/product.module').then(m => m.ProductModule)
+      },
+      {
+        path: 'subcategory',
+        loadChildren: () => import('./views/manage/subcategory/subcategory.module').then(m => m.SubCategoryModule)
+      },{
+        path: 'authors',
+        loadChildren: () => import('./views/manage/author/authors.module').then(m => m.AuthorsModule)
+      },
+      {
         path: 'widgets',
         loadChildren: () => import('./views/widgets/widgets.module').then(m => m.WidgetsModule)
       }
