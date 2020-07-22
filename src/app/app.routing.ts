@@ -92,6 +92,15 @@ export const routes: Routes = [
       },{
         path: 'authors',
         loadChildren: () => import('./views/manage/author/authors.module').then(m => m.AuthorsModule)
+      },{
+        path: 'currency',
+        loadChildren: () => import('./views/manage/currency/currency.module').then(m => m.CurrencyModule)
+      },{
+        path: 'order',
+        loadChildren: () => import('./views/manage/order/order.module').then(m => m.OrderModule)
+      },{
+        path: 'slider',
+        loadChildren: () => import('./views/manage/sliders/slider.module').then(m => m.SliderModule)
       },
       {
         path: 'widgets',
